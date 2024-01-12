@@ -1,0 +1,2 @@
+EXTENDED:
+01 coin_effect.asm

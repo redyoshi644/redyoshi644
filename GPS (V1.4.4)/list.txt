@@ -1,0 +1,23 @@
+440:25 32x32Coins/Coin10UpLeft.asm
+
+441:25 32x32Coins/Coin10UpRight.asm
+
+442:25 32x32Coins/Coin30UpLeft.asm
+
+443:25 32x32Coins/Coin30UpRight.asm
+
+444:25 32x32Coins/Coin50UpLeft.asm
+
+445:25 32x32Coins/Coin50UpRight.asm
+
+450:25 32x32Coins/Coin10DownLeft.asm
+
+451:25 32x32Coins/Coin10DownRight.asm
+
+452:25 32x32Coins/Coin30DownLeft.asm
+
+453:25 32x32Coins/Coin30DownRight.asm
+
+454:25 32x32Coins/Coin50DownLeft.asm
+
+455:25 32x32Coins/Coin50DownRight.asm
