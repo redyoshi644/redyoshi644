@@ -1,0 +1,67 @@
+#amk 2
+
+#spc
+{
+#title "Ice Submap"
+#author "brickblock369"
+#game "VLDC11"
+}
+
+#path "JingleJangle"
+
+#samples
+{
+#default
+"JingleJangle.brr"
+}
+
+#instruments
+{
+@8 $8E $E0 $00 $0f $00 ;30
+@13 $8E $F3 $00 $03 $00 ;31
+@0  $8D $F1 $00 $03 $00 ;32
+n1F $00 $00 $7F $00 $00 ;33
+n1E $00 $00 $7F $00 $00 ;34
+"JingleJangle.brr" $8F $F5 $00 $02 $90 ;35
+@2  $8D $F2 $00 $01 $80 ;36
+}
+
+
+$EF$FF$30$C0
+$F1$04$E0$90
+ $F4$02
+w150 
+t49
+#0
+o2 @30 v255  $F4$03 /
+f1 g2 > c+2 d1 < g2 b+2 b1 a+1 g+1 f+1
+
+#1
+o4 @31 / v220
+l4 a e>c<e dfeg fdad < a+>feg >
+d<fb>d < ge>c+<e f+d+a+b fa+g+f+
+
+#2
+o4 @31 $F4$01 v0 / 
+g+16 $F4$01^16 v220 ccac <a+a+>fa <aa>f<a ga+>fa 
+dddb c+c+a+c+ c-c-g+d+ c+ff $f4$01 g+8
+
+#3
+o4 @32 y9 /
+v200 l2 cefe dffe fdc+e f+a+g+f
+
+#4
+o4 @32 /
+v200 l2 <a>cd<a+ a>cdd d<ba+>c+ d+f+fc+
+
+#5
+o4 @32 y11 /
+v200 l2 < gaa+g faa+a+ afea+b>d+c+<a+
+
+#6
+ $F4$03 / 
+[[@33 v70 $FA$01$CF c32 $FA$01$8C^8.. r4 @34 $FA$01$D1 c32 $FA$01$8E^8.. r4]]255
+
+#7
+@35 o5 /
+[[v120 c4 v80 c4]]255

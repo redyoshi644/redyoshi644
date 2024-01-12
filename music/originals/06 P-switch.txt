@@ -1,0 +1,54 @@
+#amk 2
+
+#spc
+{
+#title "P-switch"
+#game "game game game game game game game game game game game"
+#author "merc the god"
+}
+
+#option smwvtable
+
+w255 t63
+
+#0 @9 v200 y12 o5
+c8<g8e8g8b-8f8d8f8>
+c8<g8e8g8b-8f8b-4>
+g8e8c8e8f8d8<b-8>d8
+g8e8c8e8f8d8f4>
+c8<g8e8g8b-8f8d8f8>
+c8<g8e8g8b-8f8b-4
+e8c8f8c+8f+8d8g8d+8
+/g+16e16a16f16a+16f+16b16g16
+>c16<g+16>c+16<a16>d16<a+16>d+16<b16
+
+#1 @9 v200 y8 o4
+g4c4f4<b-4>
+g4c4f4>d4
+c4<g4b-4f4>
+c4<g4b-4>b-4
+g8e8c8e8f8d8<b-8>d8
+g8e8c8e8f8d8f4
+c4c+4d4d+4
+/e8f8f+8g8g+8a8a+8b8>
+
+#2 @9 v200 y10 o4
+r1^1
+g4c4f4<b-4>
+g4c4f4>d4
+c4<g4b-4f4>
+c4<g4b-4>>d4<<
+g4g+4a4a+4
+/r16b8>c8c+8d8d+8e8f8f+8
+
+#3 @8 v255 o2
+[c8>c16r16<<g8>g16r16<b-8>b-16r16<f8>f16r16
+c8>c16r16<<g8>g16r16<b-8>b-16r16<f4>]3
+c8>c16r16<c+8>c+16r16<d8>d16r16<d+8>d+16r16<
+/e16>e16<f16>f16<f+16>f+16<g16>g16<g+16>g+16<a16>a16<a+16>a+16<b16>b16
+
+#4 @12 v170 o4
+[f8f16f16>c16c16<f8>c16c16<f8f4]6
+f8f16f16>c16c16<f8>c16c16<f8>c16c16<f8>
+c16c16<f16>c16c16<f16f16f16>
+/[c24c24c24<f24f24f24]4

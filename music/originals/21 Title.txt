@@ -1,0 +1,354 @@
+#SPC
+{
+	#title "MAP - Grass"
+	#game "VLDC8"
+	#author "HaruMKT"
+}
+
+#path "VLDC8 - Grass Map"
+
+#samples
+{
+	#default
+	"_bitpulse.brr"
+}
+
+#instruments
+{
+	"_bitpulse.brr" $AE $91 $B8 $04 $00	;@30 ostinato/chords
+	@8 $FE $F2 $B8 $1E $00			;@31 bass
+	@0  $FA $CC $B8 $03 $00			;@32 flute
+	@1 $FC $C8 $B8 $03 $00			;@33 countermelodies
+	@6 $FA $C8 $B8 $03 $00			;@34 trumpet
+	@3 $AF $9A $B8 $03 $00			;@35 marimba
+
+	@0 $FA $CC $B8 $03 $08			;@36 flute echo
+	@1 $FC $C8 $B8 $03 $08			;@37 countermelody echo
+	@6 $FA $C8 $B8 $03 $08			;@38 trumpet echo
+
+	@21 $00 $00 $7F $03 $00			;@39 o4e kick
+	@10 $00 $00 $7F $04 $00			;@40 o4d snare
+	@22 $00 $00 $5F $06 $00			;@41 o4c hihat
+}
+
+"RESET=$F4 $09"
+"ChordADSR=$ED $2E $95"
+"Bass1=$ED $7E $EF"
+"Bass2=$ED $7E $EC"
+"Bass3=$ED $7E $F4"
+"Bass4=$ED $0E $83"
+
+#amk 2
+#halvetempo
+
+$EF $5C $23 $23
+$F1 $05 $24 $01
+
+w255 t80
+
+#0 v140 y10 o4
+
+$F4 $02 r192/
+
+(000)[
+@39 e4 @40 d4 @39 e8e8 @40 d8 @39 e4e8 @40 d4 @39 e8e8 @40 d4
+@39 e4 @40 d4 @39 e8e8 @40 d8 @39 e4e8 @40 d4 @39 e8e8 @40 d8d8
+]12
+
+(001)[@39 e8e4. @40 d8 @39 e4e4 @40 q79 d8 @39 q7F e8 q74 e16 q79 e16 @40 q7F d8 @39 e4.]
+@39 e8e4. @40 d8 @39 e4e4 @40 q79 d8 @39 q7F e8 q74 e16 q79 e16 @40 q7F d8 @39 e8 @40 d8d8
+(001)
+@39 e1^4e8 q74 e16 q79 e16 @40 q7F d8 @39 e8 @40 d8d8
+
+(000)
+@39 e4 @40 d4 @39 e8e8 @40 d8 @39 e4e8 @40 d4 @39 e8e8 @40 d4
+@39 e4 @40 d4 @39 e8e8 @40 d8d8 @39 e8e8 @40 d8 @39 e8 @40 d8 @39 e16 @40 d16d8d16d16
+
+
+
+#1 @31 v140 l8
+
+r192/
+
+o1(100)[eeeeeeee bbbbbbbb g-g-g-g-g-g-g-g- g-g-g-g-g->e-e-e-]
+o1(101)[eeeeeeee bbbbbbbb a-a-a-a-a-a-a-a- e-e-e-e-e-] >e-e-e-
+(100)(101) o1bbb
+
+[
+o1g-g-g-g-g-g-g-g- g-g-g-g-g-a-a-a- bbbbbbbb >d-d-d-d-d-d-d-d-
+o1eeeeeeee g-g-g-g-g-g-g-g- a-a-a-a-a-a-a-a- e-e-e-e-e-e-e-e-
+]2
+
+(100)(101) o2e-e-e-
+(100)(101) o1bbb
+
+
+Bass1 o1e16 v110 ^16 Bass2 v140 q5F e4 q7F e4 q3F >e4
+q7F <g-8. v110 ^16 v140 q5F >g-4 q1F <g-8 Bass3 q7F >g-8<g-8 v110 >g-8 v140 q3F g-8
+Bass1 o1a-16 v110 ^16 Bass2 v140 q5F a-4 q7F a-4 q3F >a-4
+q7F <a-8. v110 ^16 v140 q5F >a-4 q1F <a-8 Bass3 q7F >a-8<b8 v110>b8 v140 b8
+
+Bass1 o2d-16 v110 ^16 Bass2 v140 q5F d-4 q7F d-4 q3F d-4
+q7F <e8. v110 ^16 v140 q5F >e4 q1F <e8 Bass3 q7F >e8<e8 v110 >e8 v140 q3F e8
+Bass4 <g-1 $FA $01 $B8 ^2^8 Bass2 q1F b8 Bass1 q7F >b8 Bass3 q3F <b8 
+
+RESET q7F
+
+o1eeeeeeee g-g-g-g-g-g-g-g- a-a-a-a-a-a-a-a- a-a-a-a-a-bbb
+o2d-d-d-d-d-d-d-d- <eeeeeeee g-g-g-g-g-g-g-g- a-a-a-a-a-a-a-a-
+
+#2 @30 v70
+
+r192/
+
+RESET
+
+(200)[
+o5 y15 g-4. y5 <b4. y15 >g-4
+o5 y15 g-4. y5 <g-4. y15 >g-4
+o5 y15 g-4. y5 <g-4. y15 >g-4
+o5 y15 g-4. y5 <g-4. y15 >d-4
+]12
+
+ChordADSR
+
+o4(201)[y5 b8 y15 >e-4 y5 <b4 y15 b4 y5 b4 y15 b-4 y5 b-8 y15 a-2]
+o5(202)[y5 e-8 y15 g-4 y5 e-4 y15 e-4 y5 e-4 y15 d-4 y5 d-8 y15 <b2]
+
+(201)
+o5(203)[y5 d-8 y15 e-4 y5 d-4 y15 d-4 y5 d-4 y15 <b4 y5 b8 y15 b-2]
+
+(201)(202)(201)(203)
+
+#3 @30 v70
+
+r192/
+
+RESET
+
+r8
+
+(300)[
+o4 y5 g-4. y15 >g-4. y5 <b4
+o4 y5 g-4. y15 >g-4. y5 <b4
+o4 y5 b4. y15 >g-4. y5 <g-4
+o4 y5 g-4. y15 >g-4. y5 <b4
+]11
+
+o4 y5 g-4. y15 >g-4. y5 <b4
+o4 y5 g-4. y15 >g-4. y5 <b4
+o4 y5 b4. y15 >g-4. y5 <g-4
+o4 y5 g-4. y15 >g-4. y5 <b8
+
+ChordADSR
+
+o4(301)[y5 a-8 y15 b4 y5 a-4 y15 a-4 y5 g-4 y15 e4 y5 g-8 y15 e-2]
+o4(302)[y5 b8 y15 >e-4 y5 <b-4 y15 b4 y5 b-4 y15 a-4 y5 b-8 y15 a-2]
+
+(301)
+o4(303)[y5 b-8 y15 b4 y5 b-4 y15 b-4 y5 b-4 y15 g-4 y5 g-8 y15 g-2]
+
+(301)(302)(301)(303)
+
+#4 @30 v70
+
+r192/
+
+r4
+
+(400)[
+o5 y15 b4. y5 <b2^8
+o5 y15 d-4. y5 <b2^8
+o5 y15 b4. y5 <b2^8
+o5 y15 d-4. y5 <b2^8
+]11
+
+o5 y15 b4. y5 <b2^8
+o5 y15 d-4. y5 <b2^8
+o5 y15 b4. y5 <b2^8
+o5 y15 d-4. y5 <b4.
+
+ChordADSR
+
+o4(401)[y5 e8 y15 g-4 y5 e4 y15 e4 y5 e-4 y15 d-4 y5 e-8 y15 <b2]
+o4(402)[y5 a-8 y15 b4 y5 g-4 y15 a-4 y5 a-4 y15 e4 y5 g-8 y15 e2]
+
+(401)
+o4(403)[y5 g-8 y15 a-4 y5 g-4 y15 g-4 y5 g-4 y15 d-4 y5 d-8 y15 d-2]
+
+(401)(402)(401)(403)
+
+
+
+
+#5
+
+r192/
+
+@32 y10
+
+$DE $0C $06 $24
+
+v50 $E8 $30 $5A o3b4 v120
+o4(500)[
+e8. $DD $0C $06 f+ r16 q3F g-8g-4
+q7F e4d-4 $DD $0C $06 e- ^4 $DD $00 $02 d- q3F <b4 q7F b4. q1F >d-2
+]
+
+@33 v100 q7F
+
+$DE $0C $02 $24
+
+o4(501)[e4 $DD $0C $06 g- a-8 q3F g-4 q7F <b4>e4 $DD $0C $06 g-]
+d-8. $DD $0C $06 e- $E8 $24 $32 ^8. $DD $0C $18 <<e-
+
+@32 v120
+
+$DE $0C $06 $24
+
+(502)[
+o4e8. $DD $0C $06 f+r16 q3F g-8g-4
+q7F e4d-4 $DD $0C $06 e-d-4g-8. $DD $0C $06 a-r16g-4. q1F d-2
+]
+
+@33 v100 q7F
+
+$DE $0C $02 $24
+
+o4(503)[e4 $DD $0C $06 g-a-8 q3F g-4 q7F b4 q3F b-4]
+q7F b-8. $DD $0C $06 b $E8 $24 $32 ^8. $DD $0C $18 <<b
+
+@32 v120 $DE $0C $06 $24 (500)
+@33 v100 $DE $0C $02 $24 (501) o4d-8. $DD $0C $06 e- $E8 $24 $32 ^8. $DD $0C $18 <<e-
+
+@32 v120 $DE $0C $06 $24 (502)
+
+@33 v100
+
+$DE $0C $02 $24
+
+o4e4 $DD $0C $06 g-a-8 q3F g-4 q7F b4 q3F q7F >d-8. $DD $0C $06 e-r16d-4. $DD $3C $0C <d-
+
+
+
+@34 $DE $0C $04 $24
+
+o4(504)[g-4b4. $DD $0C $03 >d-<b4 q3F b-4 q7F b4 q3F g-4 q7F g-4 $DD $0C $03 a- $FA $01 $AF ^4. $DD $30 $18 <<a-]
+
+(506)[
+@33 v80 r8 o4b8 $FB $02 $04 $05 $09 v100 o5g-16 v60 g-16 v100 g-16 v60 g-16 $FB $00 $00
+r4. v80 o4b8 $FB $02 $04 $03 $07 v100 >a-16 v60 a-16 v80 a-16 v40 a-16
+$FB $02 $04 $04 $07 v60 o4g-16 v40 g-16 v100 g-16 v60 g-16 $FB $00 $00
+]
+
+@34 v100
+
+o4(505)[
+q3B e-4 q7F g-4b-4. $DD $0C $06 bg-4<b4. $DD $0C $06 >d-
+e4. $DD $0C $06 g- d-4 $DD $0C $06 e- $FA $01 $AC ^4. ^2 $DD $48 $18 <<e-
+]
+
+$F4 $09 r2. q3B o4d-4e-4 (504)(506)
+
+@34 v100 y10 q3B o4e-4 q7F g-4b-4. $DD $0C $06 bg-4<b4. $DD $0C $06 >d-
+e4. $DD $0C $06 g-a-4 $FA $01 $AC ^4. ^2 $DD $48 $18 <<a-r1
+
+
+
+@32 y10 $DE $0C $06 $24 v50 $E8 $30 $5A o3b4 v120 (500)
+@33 v100 $DE $0C $02 $24 (501) o4d-8. $DD $0C $06 e- $E8 $24 $32 ^8. $DD $0C $18 <<e-
+
+@32 v120 $DE $0C $06 $24 (502)
+@33 v100 $DE $0C $02 $24 (503) o4b-8. $DD $0C $06 b $E8 $24 $32 ^8. $DD $0C $18 <<b
+
+@32 v120 $DE $0C $06 $24 (500)
+@33 v100 $DE $0C $02 $24 (501) o4d-8. $DD $0C $06 e- $E8 $24 $32 ^8. $DD $0C $18 <<e-
+
+@32 v120 $DE $0C $06 $24 (502)
+@33 v100 $DE $0C $02 $24 (503) o4b-8 $DD $0C $06 b $FA $01 $AF ^16 $E8 $24 $32 ^8. $DD $0C $18 <<b
+
+
+
+@34 v100 $DE $0C $04 $24
+
+(510)[
+o3 q3F g-8 q1F g-8 q7F >d-4. $DD $0C $06 e-g-4d-8 q3F <b8r8
+q7F >b4e-8a-4. $DD $0C $06 b- ^16 $DD $00 $02 a ^16 $DD $00 $02 a- ^16 $DD $00 $02 g- $FA $01 $AE ^4^16
+]
+
+@32 $ED $2A $C8 v80 $DE $0C $06 $24
+
+o5(511)[e-8a-4. $DD $0C $06 b- ^16 $DD $00 $02 a ^16 $DD $00 $02 a- ^16 $DD $00 $02 g- $FA $01 $AE ^2.^16]
+
+@34 v100 $DE $0C $04 $24
+
+(512)[
+o3 q3F g-8 q1F g-8 q7F b8 q2F >g-4 q7F e4d-4 $DD $0C $06 e-<b4 q3F >d-4
+d-2 $DD $0C $06 e- ^16 $DD $00 $02 d- ^2^8. $DD $0C $18 <<d-
+]
+
+@35 (513)[r4 v70 o5d-16d-16 v50 <d-8 v100 <g-8 v70 >g-8>g-8]
+
+@34 v100 r4(510) @32 $ED $2A $C8 v80 $DE $0C $06 $24 (511)
+@34 v100 $DE $0C $04 $24 (512) @35 (513)
+
+
+
+
+#6
+
+r192/
+
+r4.
+
+@36 y15
+
+v40 $E8 $30 $32 o3b4 v60 (500)
+
+@37 v50 q7F
+
+(501)
+d-8. $DD $0C $06 e- $E8 $24 $28 ^8. $DD $0C $18 <<e-
+
+@36 v60 (502)
+@37 v50 q7F (503) o4b-8. $DD $0C $06 b $E8 $24 $28 ^8. $DD $0C $18 <<b
+
+@36 v60 (500)
+@37 v50 (501) o4d-8. $DD $0C $06 e- $E8 $24 $32 ^8. $DD $0C $18 <<e-
+
+@36 v60 (502)
+@37 v50 o4e4 $DD $0C $06 g-a-8g-8 v90 y10 b-8. $DD $0C $06 br16b-4. $DD $3C $0C <b-
+
+@38 v50 y15 r4(504) $F4 $09 r1 q3B v100 y10 o4d-4 v50 y15 d-4 (505) $F4 $09 r2. q3B o4d-4e-4 (504)
+
+r1 $F4 $09 q3B v100 y10 o4d-4 v50 y15 d-4e-4 q7F g-4b-4. $DD $0C $06 bg-4
+v80 y10 <b8 $DD $0C $06 >d-d-4. $DD $0C $06 e-
+e-4 $FA $01 $AC ^4. ^2 $DD $48 $18 <<e-r1
+
+
+
+@36 y15 r4. v40 $E8 $30 $32 o3b4 v60 (500)
+@37 v50 q7F (501) o4d-8. $DD $0C $06 e- $E8 $24 $28 ^8. $DD $0C $18 <<e-
+
+@36 v60 (502)
+@37 v50 q7F (503) o4b-8. $DD $0C $06 b $E8 $24 $28 ^8. $DD $0C $18 <<b
+
+@36 y15 v60 (500)
+@37 v50 q7F (501) o4d-8. $DD $0C $06 e- $E8 $24 $28 ^8. $DD $0C $18 <<e-
+
+@36 v60 (502)
+@33 v50 o4e4 $DD $0C $06 g- v90 y10 a-4 q3F g-4 g-8 $DD $0C $06 a- $FA $01 $AF ^16 $E8 $24 $2C ^8. $DD $0C $18 <<a-
+
+@38 v50 y15 r4 (510) @36 $ED $2A $C8 v40 (511)
+
+@38 v60 (512) r1^8 $F4 $09 (510) @36 $ED $2A $C8 v40 (511)
+@38 v60 (512)
+
+r=120
+
+
+#7 @41 v140 y10 o4
+
+r192/
+
+[q7F c16 q72 c16 q76 c16 q72 c16]255 *

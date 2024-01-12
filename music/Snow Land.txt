@@ -1,0 +1,203 @@
+#amk 2
+
+#path "Snow Land"
+
+#SPC 
+{
+	#title "Snow Land"
+	#game "Mario Kart Super Circuit"
+	#author "K. Nishimaki, M. Matsunaga, M. Hamano"
+        #comment "Ported by EDIT3333"  
+}
+
+#samples
+{
+#optimized
+"tuba.brr"
+"Brass Section.brr"
+"String Ensemble.brr"
+"Jingle Bells.brr" 
+"Pan Flute.brr"
+"Clarinet.brr"
+"Hi-hat.brr" 
+"Cabasa.brr"  
+}
+
+#instruments
+{
+"tuba.brr"		$FF $E0 $B8 $11 $F0
+"Brass Section.brr"	$8F $E0 $B8 $04 $00
+"String Ensemble.brr"	$FF $E0 $B8 $03 $CE
+"Jingle Bells.brr"      $AF $2D $A0 $07 $A8
+"Pan Flute.brr"         $FB $E0 $B8 $0B $57
+"Clarinet.brr"		$FD $E0 $B8 $04 $00
+"Hi-hat.brr"            $FF $E0 $B8 $07 $A0
+"Cabasa.brr"            $FF $E0 $A0 $07 $A8
+}
+
+$EF $0F $36 $36
+$F1 $02 $40 $00
+$F4 $02
+
+
+
+#0 w180 t62
+
+@35 v180 o4 y10 l16
+
+
+$DE $18 $0F $20
+
+l16 (8)[o5dr<b8.r>dr<a8.r>f+8rf+32r32
+erd4.^3r6
+dr<b8.r>dr<ar>f+8.rer
+ard2^6r12dr
+erd8.r<gr>e8r4er
+c+r<b8.rar>f+8r4f+r
+erd8.r]
+er<a.r32b8.r>c+r
+d2^6r12<a8r8
+(8)
+bra8..r32>e8.r
+d2^6r12
+@34 o4 h1 
+e8.r
+f+re8.rf+rg8..r32f+8re
+a2r4.a.r32
+bra8.rbrg8.rf+8.r
+e2^8erf+rer
+d3r24erf+8.ra8.r
+grf+8.rgrb8.ra8.r
+f+8.ra8.rf+re8.rf+r
+d2..r8
+d2..dr
+erd2..
+d2..dr
+f+rd3r2r24
+
+#1 @31 v155 y10 o4 l16
+
+
+l16 r8
+(4)[gr8.gr8.ar8.ar8.gr8.gr8.f+r8.f+r8.gr8.gr8.ar8.ar8.
+gr8.gr8.f+rf+rf+rgr2rgrgrgrar2rara8.r8.]
+br8.br8.
+(5)[ar8.]6
+(4)
+(5)4
+b8.rbrar4..
+@32 v140
+d2...r
+e2^8drerer
+g4..re8..r32c+8..r32
+<b2...r
+a2...r
+b2...r
+>c+4..rc+4..r
+<a2...r
+>f+1^4..
+rf+rf+3r24
+f+1^4..
+rf+rf+8.rf+r
+;
+
+
+
+#2 @31 v155  y10 l16
+
+
+
+l16 r8
+(6)[o3br8.br8.>dr8.dr8.<br8.br8.ar8.ar8.br8.br8.>dr8.dr8.
+<br8.br8.>drdrdr<br2rararar>c+r2rc+rc+8.r8.]
+gr8.gr8.er8.er8.
+(7)[dr8.]4
+(6)
+(7)4
+g8.rgrd
+[r2]16
+r4.. @32 v140 
+<a1^4..
+rara3r24
+a1^4..
+rara8.rar
+;
+
+
+
+
+
+
+
+
+#3 @33 v240 o3 y10 l16
+
+
+[b4b4b4b4]15
+
+
+b8b4b8b8.r4r16
+@32 o4 v140 
+f+2...r16
+a2^8f+16r16g16r16a16r16
+b4..r16g8..r32f+8..r32
+e2...r16
+d2...r16
+d2...r16
+f+4..r16e4..r16
+d2...r16
+d2..d16r16
+e16r16d2..
+d2..d16r16
+f+16r16d3r24d16r4..
+
+
+
+
+#5 @30 v150 y10 o2 
+
+l8 (10)[ [[dr<ar>]]3 d16.r32<a16.r32b16.r32>c+16.r32]2
+(20)[gr2e16.r32e16.r32e16.r32ar2b16.r32b16.r32b16.r32argrer<ar]
+(30)[o2dr<ar>d16.r32<a16.r32b16.r32>c+16.r32]
+(10)2
+(20)
+(40)[o2dr<ar>dr] 
+o1gr
+(40) o2f+r
+arerarer
+brargrf+r
+er<br>e16.r32<a16.r32b16.r32>c+16.r32
+dr<ar>drer
+grdrgrbr
+arer<ar>er
+(30)
+(50)[o2dr<arb16.r32>c+r]e16.r32
+(50)
+o1b16.r32
+(50)f+16.r32
+(50)
+o1b16.r32
+;
+
+
+
+
+#4 v190 y10 @23
+
+o4
+
+l8 [
+@36cc@37c@36ccc@37c@36ccc@37c@36ccc@37cc
+@36cc@37c@36ccc@37c@36c
+cc@37c@36ccc@37c@36c]4
+(1)[@36cc16c16@37c@36c16c16cc16c16@37c@36c16c16]
+(2)[@36cc16c16@37c@36c16c16cc16c16@37cc16@36c16]
+(1)3
+(2)
+(1)2
+(3)[@36cc16c16@37c@36c16c16@37c16c16c16c16c@36c16c16]
+(2)
+(3)
+(2)
+;
+

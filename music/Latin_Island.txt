@@ -1,0 +1,266 @@
+#amk 2
+#SPC
+{
+	#title "Latin Island"
+	#game "Yoshi's Island"
+	#comment "ported by Wakana"
+}
+#samples
+{
+#optimized
+"Latin/@8.brr"
+"Latin/Trumpet.brr"
+"Latin/altKick.brr"
+"Latin/acusticS.brr"
+"Latin/Piano2.brr"
+"Latin/XG_crash.brr"
+"Latin/XG_hihat2.brr"
+"Latin/Waka_Electric_Piano.brr"
+"Latin/Waka_Saxophone2.brr"
+}
+
+#instruments
+{
+"Latin/@8.brr" $FF $F1 $B8 $04 $82       ;@30 acoustic bass
+"Latin/Trumpet.brr" $FC $E0 $A0 $04 $09; @41
+"Latin/altKick.brr" $00 $00 $6D $0F $00    ;   a y10@32  v255  
+"Latin/acusticS.brr" $FF $EF $C0 $0F $00    ;  y12@33 v245 
+"Latin/Piano2.brr" $FF $F2 $C0 $03 $05 ; @34
+"Latin/XG_crash.brr" $FE $EF $CF $0A $92; @35
+"Latin/XG_hihat2.brr" $FF $F7 $00 $0D $00; @36 SHORT
+"Latin/XG_hihat2.brr" $FF $F2 $00 $0C $00; @37 LONG
+"Latin/Waka_Electric_Piano.brr" $FF $F2 $C0 $05 $50; @38
+@2 $FF $F2 $00 $03 $00;@39
+"Latin/Waka_Saxophone2.brr" $8F $C0 $00 $03 $C0 ;@40
+"Latin/Trumpet.brr" $FF $E0 $A0 $04 $09; @41
+}
+
+"bum=@32 v220 y10 "
+"pem=@33 v180 y10 "
+"tz=@36 v130 y8 "
+"ts=@37 v150 y7 "
+"crh=@35 v190 y10 "
+
+$EF $FF $35 $35
+$F1 $04 $B0 $01
+
+$f4$02
+
+(!800)[$F4$09]
+(!801)[$ED$7F$F8]
+(!802)[$ED$7F$F5]
+
+
+#0 t58 w225
+$f4$03
+(!800,-1)
+(!802,3)
+@30 o4 v210 l16
+fr4^16frf+r4^16f+rgr4^16gr>cr<crdrer
+/
+(001)[ [[f8>cr<c8>cr<]]2 [[d8>cr<f+8>cr<]]2 ]
+(002)[ [[g8a+rd8a+r]]2 c8>cr<g8>cr<crcrdrer]
+(001) g8a+rd8a+rc8>cr<g8>cr< [f8>cr<c8>cr<]2
+
+(001)
+(002)
+(001) g8a+rd8a+rc8>cr<g8>cr< [f8>cr<c8>cr<]2
+
+(003)[ [[d8>cr<f+8>cr<]]2 g8a+rd8a+rgrfrerdr]
+[c8>cr<g8>cr<]2 f8>cr<c8>cr<frfrerd+r
+(003)
+>c8c8.c8.<a+8a+8.a+8.a8a8.a8.grcrdrer
+
+[f8>cr<c8>cr<]2 [d8>cr<f+8>cr<]2 g8a+rd8a+rc8>cr<g8>cr< {f8f8f8r8f8f8}f2
+
+(001)(002)(001)(002)
+
+
+
+
+
+
+#1
+;MAIN
+(!800,-1)
+(!801,3)
+@31 $de$15$0F$40 $e5$00$0a$2A v160 y11 o4 l16
+[dc<a>drc<a8]2 >>dcdarfd8cr4..
+/
+o3 v180 @31 $de$15$0F$40 $e5$00$0a$2A y11
+(100)[g+8ar>c8drfrf4ara+8arf+rdrc4r8ara8gra8gra4r8gr>c8<argrerd4r8cr<g+8ar>c8drfrf4ara+8arf+r>dr<a4r8ara8drar>cr<a4<gr>arf2.r4]2
+
+@34 v140 y12 o4
+a8a8a8a8a8aa8aa8
+[a+8a+8a+8a+8a+8a+a+8a+a+8]2
+[a8a8a8a8a8aa8aa8]2
+a+8a+8a+8a+8a+8a+a+8a+a+8
+
+@31 $de$15$0F$40 $e5$00$0a$2A v170 y11 o5
+crc8rc8.<a+ra+8ra+8.ara8ra8.grc4.
+<v180
+g+8ar>c8drfrf4ara+8arf+r>dr<a4r8ara8drar>cr<a4>c4 {f8f8f8r8f8f8} f2
+
+@34 v140 y12 o4
+[ [[a8a8a8a8a8aa8aa8]]2
+[[a+8a+8a+8a+8a+8a+a+8a+a+8]]2 ]2
+
+
+
+[r1]100
+
+
+
+
+
+#2
+;MAIN
+(!800,-1)
+(!801,3)
+@31 $de$15$0F$40 $e5$00$0a$2A v160 y10 o3 l16
+[dc<a>drc<a8]2 >>dcdarfd8cr4..
+/y10
+o3 v180 @31 $de$15$0F$40 $e5$00$0a$2A
+[e8fra8ar>crc4erf+8drcr<arf+4r8>erd8drd8drd4r8dra8erdrcr<a+4r8are8fra8ar>crc4erf+8drcr<ar>d4r8erd8<a+r>drerc4r8<a+ra2.r4]2
+
+@34 v140 y12 o4
+[f+8f+8f+8f+8f+8f+f+8f+f+8
+f8f8f8f8f8ff8ff8]
+e8e8e8e8e8ee8ee8
+f8f8f8f8f8ff8ff8
+*
+
+@31 $de$15$0F$40 $e5$00$0a$2A v170 y10 o4
+ere8re8.drd8rd8.crc8rc8.<a+re4.
+v180
+e8fra8ar>crc4erf+8drcr<ar>d4r8erd8<a+r>drerc4<a+4>{a8a8a8r8a8a8}a2
+
+@34 v140 y12 o4
+[f8f8f8f8f8ff8ff8
+f+8f+8f+8f+8f+8f+f+8f+f+8
+f8f8f8f8f8ff8ff8
+e8e8e8e8e8ee8ee8]2
+
+[r1]100
+
+
+
+
+
+
+#3
+(!800,-1)
+(!801,3)
+@38 v140 y9,1,1 o4 l16
+[dc<a>drc<a8]2 >dcdarfd8cr4..
+/
+@40 v130 y7 o4
+(300)[fcfgg+afcfcfa8.fcf+df+a>c8<af+>d<af+df+af+dg8d8gdga+a+>c<a+agfededececega+>c<a+agfed] 
+(301)[fcfgg+afcfcfa8.fcf+df+a>c8<af+>d<af+df+af+dgf+gagdga+edececegfcfgg+afcfcdf8cdf]
+(300)(301)
+>
+[dcrdcrdcrdcrd8<a8>c<a+r>c<a+r>c<a+r2>]
+c<a+r>c<a+r>c<a+r>c<a+r>c8<a+8a+ara+ara+ar2
+*
+>c8c8.c8.<a+8a+8.a+8.a8a8.a8.g8c4.
+fcfgg+afcfcfa8.fcf+df+a>c8<af+>d<af+df+af+dgf+gagdga+edececef+> {f8f8f8r8f8f8}f2
+
+(300)2
+
+
+
+[r1]100
+
+
+
+
+
+
+#4
+$f4$03
+;PERCUSS
+o3
+pemc4.c8c4.c8c4.c8c4c4
+/
+(400)[ [[bumc8 pemc8 bumc8 pemc8 bumc8. pemc bumc8 pemc8]]3
+bumc8 pemc8 bumc8 pemc8 cbumccpemcbumccpemcbumc ]4
+
+[bumc4]24
+[pemc8c8.c8.]3 c4 cccc
+
+
+[bumc8 pemc8 bumc8 pemc8 bumc8. pemc bumc8 pemc8]3
+pem {c8c8c8r8c8c8}c4c8bumc8
+
+(400)2
+
+
+[r1]100
+
+
+
+
+
+
+
+#5
+$f4$03
+;PERCUSS
+crh c4. tsc8 crh c+4. tsc8 crhd4. tsc8 crhc+2
+/
+(500)[ [[y13 @36 v130 c v120 c v110 c v100 c]]3 @36 v130 c v100 c  tsc8 ]15
+[y13 @36 v130 c v120 c v110 c v100 c]2 crh y12 c8. y8c+8. y12c8
+
+(500)6
+crh y12c8 y8c+8. y12c8. y8c+4^16 y12c8. y8c+4^16 y12c8. y8c+2
+
+(500)3 {tsc8c8c4c8c8} crh c2
+
+(500)8
+
+[r1]100
+
+
+
+
+
+
+
+#6
+(!800,-1)
+(!801,3)
+@39 v100 o6 l16 y12,1,1
+c4.c8c4.c8d4.d8d2
+/
+[r1]8
+@38 v140 y9,1,1 o4 l16
+(100)
+o3 crh c1 [r1]3
+
+@41 $de$15$0F$40 $e5$00$0a$2A v100
+$e8$80$C0 r8dc+df+a>cdd+cdaf+ $e8$A0$70 d+dcdc<aa+>c<aa+8.aa+gafg
+
+v170 y8
+o4grg8rg8.frf8rf8.ere8re8.dr<g4.
+$DF$E5$00$00$00
+@38 v140 y9,1,1 o4 l16
+g+8ar>c8drfrf4ara+8arf+r>dr<a4r8ara8drar>cr<a4>c4 {f8f8f8r8f8f8} f2
+
+
+[r1]100
+
+
+
+#7
+@39 v100 o5 l16 y8,1,1
+f4.f8f+4.f+8g4.g8e2
+/
+[o3 crh c1^4 @39 v120 o5 l16 y8,1,1 d4f+4>d4<a1^4c4g4>c4<f1^4d4f+4>d4<a4c4g4>c4<f1]2
+[r1]6
+@39 v160 o6 l16 y8,1,1
+crc8rc8.<a+ra+8ra+8.ara8ra8.grc4.
+<v130
+g+8ar>c8drfrf4ara+8arf+r>dr<a4r8ara8drar>cr<a4>c4 {f8f8f8r8f8f8} f2
+
+
+[r1]100

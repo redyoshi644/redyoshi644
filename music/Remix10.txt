@@ -1,0 +1,341 @@
+#amk 2
+#spc
+{
+#title "Remix 10"
+#game "Super Mario Run"
+#comment "Ported by MarioSonic4life"
+}
+#path "Remix10"
+#samples
+{
+	#optimized
+	"bdh2_tom_synth.brr"
+	"4life_TrapSnare.brr"
+	"4life_808Kick.brr"
+	"Ride.brr"
+	"smrpg_synthbass.brr"
+	"smrpg_synthvoice.brr"
+	"rf_synthstrings.brr"
+	"rf_synthbrass2.brr"
+	"Genesis_SlapBass.brr"
+	"synth piano.brr"
+	"BAH!.brr"
+	
+}
+#instruments
+{
+	"bdh2_tom_synth.brr" 			$FF $E0 $7F $07 $F0		;@30
+	"4life_TrapSnare.brr" 			$FF $E0 $7F $05 $1F		;@31
+	"4life_808Kick.brr"				$FF $F7 $7F $05 $61		;@32
+	"Ride.brr"						$FF $F3 $7F $0A $84		;@33
+	n1F								$FF $F9 $7F $04 $00		;@34
+	"smrpg_synthbass.brr"			$FF $F2 $7F $03 $3F		;@35
+	"smrpg_synthvoice.brr"			$FF $EF $7F $03 $CC		;@36
+	"rf_synthstrings.brr"			$FE $F0 $7F $07 $3D		;@37
+	"rf_synthbrass2.brr"			$FF $E0 $7F $03 $C1		;@38
+	n1F								$FF $F0 $7F $04 $00		;@39
+	"Genesis_SlapBass.brr"			$FD $E9 $7F $08 $40		;@40
+	"synth piano.brr"				$FE $EE $7F $04 $00		;@41
+	"BAH!.brr"						$FF $F0 $7F $03 $00		;@42
+	
+}
+w190
+t64
+$F4$02
+$EF$FE$12$12
+$F1$03$74$00
+$F2$DC$12$12
+
+
+
+#0
+
+r2
+
+
+
+/
+[v240@32c8v77@34c8v220@32c8v77@34c8]116
+
+[v240@32c8v77@34c8v220@32c8v77@34c8
+v240@32c16v200c16c8v220@32c8v77@34c8]12
+
+
+
+#1
+
+@30o3
+v195b8v175g+16g16g+16g16e16f16>
+
+
+
+/
+[[
+(10)[v155@33c4v200@31c4]34
+@30o3v125
+$E8$BF$C8[a16g+16g+16g+16]4
+]]2
+
+
+
+(10)44
+>[v155@33c4v200@31c4
+v155@33c16v120c16v77@34c8v200@31c4]11
+@30o3v125
+$E8$BF$C8[a16g+16g+16g+16]4
+
+
+
+#2
+
+r2
+
+
+
+/
+@35v175o3
+[b8>b8]16[d8>d8<]8[e8>e8<]7e8d8<
+[b8>b8]4[e8>e8<]4<[a8>a8]4[d8>d8<]4<[g8>g8<]7f+8>f+8<[e8>e8<]4[a8>a8]12
+
+
+
+[d8>d8<]8[g8>g8<]8[e8>e8<]4[a8>a8<]4<[a8>a8]4[d8>d8<]4<
+[[
+[g8g+8]7g8f8
+]]4
+[g8>g8]7>f8d8<<
+
+
+
+[f8^16>f16<]16[f8>f8<a8>a8<a+8>a+8<b8>b8]<a8>a8<a-8>a-8<g8f8f8f8*c8>c8<d8e8f8c8f8>f8<
+
+
+
+$F4$03
+[f8>f8]54<g8>g8<a8>a8
+
+
+
+[c8>c8<]4<[f8>f8]8[c8>c8<]8<[f8>f8]8
+<e8>e8<e8>e8<a8>a8<a8>a8
+<d8>d8<d8>d8<g8>g8<g8>g8
+[c8>c8<]4[<c8>c8]8
+
+
+
+#3
+
+r2
+
+
+
+/
+@38v153o5
+[[
+[r4a8g+8g8f8r8f+8
+r8<a+8]b8>d8r8<b8>d8e8
+*r4r2
+]]2
+
+@36v230o4
+$E5$06$06$38
+r4f+4$DD$00$12$AF^8$DD$00$18$AA a4$DD$00$12$B2^8$DD$00$18$AD b4$DD$00$12$B6^8$DD$00$18$B0
+>c+4$DD$00$0C$B4e4e8
+v200
+d4<b1r4a8r8b8r8f+4^1r4a8r8a8r8a8b8^4^1r2a4b4^8b8r8>d8^1
+
+;r4b4^8>d4^8f+4^8
+
+
+
+@38v153o5
+r8
+[f+8r8f8f+8r4f8f+8r8<b8>d8r2r8]
+f+8r8f8{f+8r8f+8r8d8r8}e8r1
+*
+f+8r8f8{f+8r8<a8r8b8r8}>d8r8r4r2
+
+[r1]4
+v144<
+d4c+8{<a+16>c+16<a+16}a4^8d8d+8{^8f16}d+8f8g2
+>d4c+8{<a+16>c+16<a+16}a4^8d8d+8{^8f16}g8{f16g16f16}d2^1^1
+
+
+
+v153o5
+[a8r8f8r16c16d16f16r16f16r8r16d16c16r16f16r16f16r16>c16r16<a8r16g8r8c16
+a8r8f8r16c16d16f16r16f16r8r16d16c16r16f16r16a+16a16g16]f16^4r4
+*f16 $E8$C0$70 
+^1 $DD$00$60$B4 $E8$C0$40
+^2 $DD$00$60$B3
+^2 $DD$00$60$B2 $E8$60$20
+^2 $DD$00$60$B0
+
+
+
+v140<
+(30)[r4^8e-8r8e8^4r4^8d+8r8d8^4]2
+@41v166o6
+(50)[r4c4^8<a+4^8f4g+4^8a+4d+8f4c4^8d4^8]d+1
+@38v140
+(30)r1r1
+
+
+
+@42v160o5
+
+(31)[g4r8g8r2 f4r8f8r2 f4r8f8r2 e4r8e8r2
+g4r8g8r2 a4r8a8r2 a4r8a-8r2 g4r8e8r2
+f4r8g8r2 e4r8e8r2 > c4r8c8r2 r1]
+
+
+
+#4
+
+r2
+
+
+
+/
+@37v135o5
+[d1e1]4
+v150
+[d8r4<a8r4f+8r4b8r8>c+8r8c8<b8r8]3{a8^16r16>f+^16r16a^16r16}b8r8g8a8r8f+8r8d8r8e8c+8r8
+r1r1
+
+
+
+o3v105
+[r8a8]4>[r8f+8]12<
+[r8a8]4[r8b8]4[r8a8]4>[r8f+8]4
+
+v152>
+(40)[g4f+8{d+16f+16d+16}d4^8<g8g+8{^8a+16}g+8a+8g2
+>g4f+8{d+16f+16d+16}d4^8<g8g+8{^8a+16}>c8<{a+16>c16<a+16}]
+g2(40)g2^1^1
+
+
+
+[r1]4v158
+[e8r8c8r16<g16a16>c16r16c16r8r16<a16g16r16>c16r16]c16r16g16r16e8r16d8r8<g16>
+*f16e16d16c16^2
+
+
+
+@40v115<
+[f8>c8f8c8r8g+8f8c8]13
+<f8>c8f8c8r2
+
+
+
+@38v95o5
+(41)[e8c8]4
+(42)[f8d8]8
+(41)8 [a8f8]6
+a-8f8a-8f8[g8e8]4
+(42)2g8d8g8d8(41)4
+>[e8c8]4c8r8c8c16r16c16c16c16r16c8r8
+
+
+
+#5
+
+r2
+
+
+
+/
+@41v118o2l16
+[b>df+b>df+b>d
+f+d<bf+d<bf+d
+eg+b>eg+b>eg+
+bg+e<bg+e<bg+]4
+@37v93o4
+[d8d16d16]4[e8e16e16]4
+[d8d16d16]8<[b8b16b16]8[a8a16a16]12>[a8a16a16]4
+
+
+
+v105
+[r8d8]20[r8e8]8[r8d8]4
+
+[r1]4
+@38o4
+(40)g2^1^1
+
+
+
+[r1]10
+@38v150o5
+$FA$02$05
+(30)2
+$FA$02$F4
+(50)d+2
+$E8$C0$70 
+^2 $DD$00$60$A6 $E8$C0$40
+^2 $DD$00$60$A5
+^2 $DD$00$60$A4 $E8$60$20
+^1 $DD$00$60$A2
+
+
+
+$FA$02$00<v150
+r1r2g8r8a8r8
+
+
+
+@38v140o5
+$ED$7D$F4
+e4r8e8r2 d4r8d8r2 d4r8d8r2 c4r8c8r2
+e4r8e8r2 f4r8f8r2 f4r8f8r2 e4r8g8r2
+d4r8d8r2 c4r8c8r2 g4r8g8r2 r1
+
+
+
+#6
+
+r2
+
+
+
+/
+
+@37v83o3
+[[
+[a8a16a16]4[b8b16b16]4
+]]5
+[a8a16a16]8[f+8f+16f+16]8[e8e16e16]12>[e8e16e16]4
+
+
+
+@39v70
+c1[r1]29
+
+
+
+@41v145o5
+c1^1
+@39v70
+c1^1r1r1
+@38v150o5
+$FA$02$05
+(30)r1r1
+$FA$02$00
+
+
+
+@38v130
+$ED$7D$F4
+(31)
+
+
+
+#7
+
+r2
+
+
+
+/
+@39v70
+c1[r1]99
