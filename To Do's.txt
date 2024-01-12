@@ -1,0 +1,18 @@
+TO DO:
+
+* Change Parachute Cap graphics )need an artist)
+* Make an animation for the talking flowers
+* Fix background on level 105 
+* Change overworld border colours for every submap
+World 1: Green
+World 2: Orange 
+World 3: Cyan / Light Blue, etc
+* Create a title screen logo and image (needs an artist)
+* Create Graphics for different Pipe colours
+* Finish making Peach's Castle and Shop
+* Make some graphics for the smb wonder wonder seed (need an artist) 
+* Start working on the overworld
+* Find a way to have music continue playing after the player dies )only used for specific levels with sampled music)
+* add images of Birdo and yoshi next to player 1 and 2 text on title screen )Birdo head  next to player 1 text, Birdo and Yoshi head next to player 2 text. needs an artisst)
+* Change Mario A,B,C text on title screen to file 1,2 and 3
+*
